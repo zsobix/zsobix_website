@@ -11,10 +11,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/d9df4e2318.js" crossorigin="anonymous"></script>
   <meta name="darkreader-lock">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"></script>
 </head>
 <body>
   <section id="main" class="grid">
-    <!-- TODO: make cursor like flashlight in dark mode-->
     <div class="gridbox">
       <h1 class="inline">Hi, <br> 
         i'm <h1 class="highlight">zsobix</h1>
@@ -24,14 +24,14 @@
       </h1>
     </div>
     <div class="gridbox">
-      <h1><a href="https://github.com/zsobix">Github</a> <br> 
+      <h1 class="inline"><a href="https://github.com/zsobix">Github</a> <br> 
         <a href="https://x.com/zsobix">Twitter</a> 
         <br><br>
-        Contact me at: <br> 
+        Email: <br> 
         <a href="mailto:index@zsobix.xyz">index@zsobix.xyz</a></h1>
     </div>
   </section>
-  <section id="projects">
+  <section id="projects" class="grid">
     <div class="gridbox">
       <h1>My projects: <br>
       <a href="https://github.com/zsobix/lidlplus-ui">lidlplus-ui</a> <br> 
@@ -41,12 +41,79 @@
       <a href="https://github.com/zsobix/hunpull">hunpull</a>
     </h1>
     </div>
+    <div class="gridbox">
+      <div id="menu" class="dropdown">
+        <h1>lidlplus-ui</h1>
+        <div id="list">
+          <h1>implementation of the Lidl Plus loyalty app for desktop</h1>
+        </div>
+      </div>
+
+      <hr>
+      
+      <div id="menu" class="dropdown">
+        <h1>lidlplus-api</h1>
+        <div id="list">
+          <h1>implementation of the Lidl Plus loyalty app API in python</h1>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="menu" class="dropdown">
+        <h1>zsobix_website</h1>
+        <div id="list">
+          <h1>this website!</h1>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="menu" class="dropdown">
+        <h1>teletext</h1>
+        <div id="list">
+          <h1>a desktop <a href="https://en.wikipedia.org/wiki/Teletext">teletext</a> reader, written in python with GTK+libadwaita</h1>
+        </div>
+      </div>
+
+    <hr>
+
+      <div id="menu" class="dropdown">
+        <h1>hunpull</h1>
+        <div id="list">
+          <h1>a tool to get a m3u8 playlist of all popular hungarian tv channels</h1>
+        </div>
+      </div>
+    </div>
   </section>
   <section id="footer" class="gridbox">
-    <h5><i class="fa-regular fa-copyright"></i> ZSOBIX 2026</h5>
-    <h5><a href="#main">ABOUT</a></h5>
-    <h5><a href="#projects">PROJECTS</a></h5>
+    <div>
+      <h5><i class="fa-regular fa-copyright"></i> ZSOBIX 2026</h5>
+      <h5><a href="#main">ABOUT</a></h5>
+      <h5><a href="#projects">PROJECTS</a></h5>
+    </div>
+    <div class="footercopy">
+      <h5><a href="https://github.com/zsobix">GITHUB</a></h5>
+      <h5><a href="https://x.com/zsobix">TWITTER</a></h5>
+      <h5><a href="mailto:index@zsobix.xyz">EMAIL</a></h5>
+    </div>
     <p class="footertext">zsobix.xyz</p>
   </section>
 </body>
+<script>
+// Source - https://stackoverflow.com/a/7717572
+// Posted by Joseph Silber, modified by community. See post 'Timeline' for change history
+// Retrieved 2026-07-16, License - CC BY-SA 3.0
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+  });
+
+</script>
 </html>
