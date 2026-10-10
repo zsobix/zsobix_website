@@ -31,19 +31,11 @@
         <a href="mailto:index@zsobix.xyz">index@zsobix.xyz</a></h1>
     </div>
   </section>
-  <section id="projects" class="grid">
+  <section id="projects">
     <div class="gridbox">
-      <h1>My projects: <br>
-      <a href="https://github.com/zsobix/lidlplus-ui">lidlplus-ui</a> <br> 
-      <a href="https://github.com/zsobix/lidlplus-api">lidlplus-api</a> <br> 
-      <a href="https://github.com/zsobix/zsobix_website">zsobix_website</a> <br> 
-      <a href="https://github.com/zsobix/teletext">teletext</a> <br>
-      <a href="https://github.com/zsobix/hunpull">hunpull</a>
-    </h1>
-    </div>
-    <div class="gridbox">
+      <h1>My projects: </h1>
       <div id="menu" class="dropdown">
-        <h1>lidlplus-ui</h1>
+        <h1><a href="https://github.com/zsobix/lidlplus-ui">lidlplus-ui</a> <i class="fa-solid fa-chevron-down dropdown-icon"></i></h1>
         <div id="list">
           <h1>implementation of the Lidl Plus loyalty app for desktop</h1>
         </div>
@@ -52,7 +44,7 @@
       <hr>
       
       <div id="menu" class="dropdown">
-        <h1>lidlplus-api</h1>
+        <h1><a href="https://github.com/zsobix/lidlplus-api">lidlplus-api</a> <i class="fa-solid fa-chevron-down dropdown-icon"></i></h1>
         <div id="list">
           <h1>implementation of the Lidl Plus loyalty app API in python</h1>
         </div>
@@ -61,16 +53,16 @@
       <hr>
 
       <div id="menu" class="dropdown">
-        <h1>zsobix_website</h1>
+        <h1><a href="https://github.com/zsobix/zsobix_website">zsobix_website</a> <i class="fa-solid fa-chevron-down dropdown-icon"></i></h1>
         <div id="list">
-          <h1>this website!</h1>
+          <h1>this website! <br> inspired by <a class="highlight" href="https://swissthemes.design/#templates">this</a></h1>
         </div>
       </div>
 
       <hr>
 
       <div id="menu" class="dropdown">
-        <h1>teletext</h1>
+        <h1><a href="https://github.com/zsobix/teletext">teletext</a> <i class="fa-solid fa-chevron-down dropdown-icon"></i></h1>
         <div id="list">
           <h1>a desktop <a href="https://en.wikipedia.org/wiki/Teletext">teletext</a> reader, written in python with GTK+libadwaita</h1>
         </div>
@@ -79,12 +71,15 @@
     <hr>
 
       <div id="menu" class="dropdown">
-        <h1>hunpull</h1>
+        <h1><a href="https://github.com/zsobix/hunpull">hunpull</a> <i class="fa-solid fa-chevron-down dropdown-icon"></i></h1>
         <div id="list">
           <h1>a tool to get a m3u8 playlist of all popular hungarian tv channels</h1>
         </div>
       </div>
+    <hr>
+    <br>
     </div>
+
   </section>
   <section id="footer" class="gridbox">
     <div>
@@ -104,6 +99,7 @@
 // Source - https://stackoverflow.com/a/7717572
 // Posted by Joseph Silber, modified by community. See post 'Timeline' for change history
 // Retrieved 2026-07-16, License - CC BY-SA 3.0
+
 
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {

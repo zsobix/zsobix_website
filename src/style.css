@@ -108,13 +108,13 @@ Retrieved 2026-07-16, License - CC BY-SA 4.0
 
 #menu #list {
     max-height: 0;
-    transition: max-height 1s ease-out;
+    transition: max-height 2s ease-out;
     overflow: hidden;
 }
 
-#menu:hover #list {
-    max-height: 50em;
-    transition: max-height 1.5s ease-in;
+#menu:hover #list{
+    max-height: 25em;
+    transition: max-height 0.5s ease-in;
 }
 
 #menu h1 {
@@ -132,9 +132,14 @@ Retrieved 2026-07-16, License - CC BY-SA 4.0
 
 html {
     overflow-y: scroll;
-    scroll-snap-type: both proximity;
+    scroll-snap-type: y mandatory;
 }
 
 section {
   scroll-snap-align: start;
+}
+
+.dropdown-icon {
+    font-size: 24px;
+    vertical-align: middle;
 }
