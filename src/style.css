@@ -130,14 +130,14 @@ Retrieved 2026-07-16, License - CC BY-SA 4.0
     margin: 5px;
 }
 
-html {
+/* html {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-}
+} */
 
-section {
-  scroll-snap-align: start;
-}
+/* section {
+  scroll-snap-align: center;
+} */
 
 .dropdown-icon {
     font-size: 24px;
